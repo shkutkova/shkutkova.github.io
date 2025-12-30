@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Тест кнопки чата</title>
+</head>
+<body>
+
+    <h1>Тестовая страница</h1>
+
+    <!-- кнопка -->
+    <script>
+        (function(a, m, o, c, r, m) {
+            a[m] = {
+                id: "401943",
+                hash: "86a89169e90a2059ac45ba83e5cd8b813d2325aa93938d80e8d53c1101a1636d",
+                locale: "ru",
+                setMeta: function(p) {
+                    this.params = (this.params || []).concat([p])
+                }
+            };
+            a[o] = a[o] || function() {
+                (a[o].q = a[o].q || []).push(arguments)
+            };
+            var d = a.document,
+            s = d.createElement('script');
+            s.async = true;
+            s.id = m + '_script';
+            s.src = 'http://gso.main6.kommo2.com/js/button.js';
+            d.head && d.head.appendChild(s)
+        }(window, 0, 'crmPlugin', 0, 0, 'crm_plugin'));
+    </script>
+
+    <!-- скрипт onButtonClick -->
+    <script>
+        amoSocialButton('onButtonClick', function (service, link) {
+            console.log('onButtonClick сработал');
+            console.log('service:', service);
+            console.log('link:', link);
+        });
+    </script>
+
+
+</body>
+</html>
+
